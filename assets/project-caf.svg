@@ -1,40 +1,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="290" viewBox="0 0 500 290" role="img">
-<title>CAF: College Availability Finder</title>
+<title>CAF - College Availability Finder</title>
 <style>
-.fx{transform-box:fill-box;transform-origin:center}
-.j{transform-box:fill-box;transform-origin:left bottom}
-.s1,.s2{opacity:0}
-@media (prefers-reduced-motion:no-preference){
-.d1{animation:d1 11s ease-in-out infinite}
-.d2{animation:d2 14s ease-in-out infinite}
-.d3{animation:d3 9s ease-in-out infinite}
-.wig{animation:wig 2.4s ease-in-out infinite}
-.wig2{animation:wig 3.1s ease-in-out infinite reverse}
-.bob{animation:bob 3s ease-in-out infinite}
-.pop{animation:pop 1.6s ease-in-out infinite}
-.spin{animation:spin 9s linear infinite}
-.spinr{animation:spin 13s linear infinite reverse}
-.jelly{animation:jelly 5s ease-in-out infinite}
-.shad{animation:shad 4s ease-in-out infinite}
-.blink{animation:blink 1s steps(1) infinite}
-.shine{animation:shine 5.5s ease-in-out infinite}
-.stat{animation:stat 9s infinite}
-.tape{animation:tape 1.2s linear infinite}
+@keyframes glow-card {
+  0%, 100% { stroke: #00F0FF; filter: drop-shadow(0 0 4px #00F0FF88); }
+  50% { stroke: #7928CA; filter: drop-shadow(0 0 8px #7928CA88); }
 }
-@keyframes d1{0%,100%{transform:translate(0,0)}33%{transform:translate(46px,-24px)}66%{transform:translate(-34px,22px)}}
-@keyframes d2{0%,100%{transform:translate(0,0)}40%{transform:translate(-50px,18px)}75%{transform:translate(30px,-26px)}}
-@keyframes d3{0%,100%{transform:translate(0,0)}50%{transform:translate(36px,30px)}}
-@keyframes wig{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes jelly{0%,55%,100%{transform:scale(1,1)}62%{transform:scale(1.05,.92)}69%{transform:scale(.97,1.06)}76%{transform:scale(1.02,.98)}83%{transform:scale(1,1)}}
-@keyframes shad{0%,100%{transform:translate(0,0)}33%{transform:translate(5px,3px)}66%{transform:translate(-1px,5px)}}
-@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes shine{0%{transform:translateX(0)}55%,100%{transform:translateX(var(--w))}}
-@keyframes stat{0%{opacity:0}3%{opacity:1}30%{opacity:1}33%{opacity:0}100%{opacity:0}}
-@keyframes tape{to{transform:translateX(39.6px)}}
+@keyframes spin-reticle { to { transform: rotate(360deg); } }
+.card-border { animation: glow-card 5s infinite; }
+.spin-gear { animation: spin-reticle 12s linear infinite; transform-origin: 455px 42px; }
 </style>
-<defs><filter id="b" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="36"/></filter><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".66"/><stop offset="1" stop-color="#fff" stop-opacity=".18"/></linearGradient><pattern id="d" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#000" fill-opacity=".16"/></pattern></defs>
-<clipPath id="c"><rect x="6" y="6" width="478" height="268"/></clipPath><g class="fx bob" style="animation-delay:-0.8s"><rect x="16" y="16" width="478" height="268" fill="#000000"/><rect x="6" y="6" width="478" height="268" fill="#DBE4FF"/><g clip-path="url(#c)"><rect x="6" y="6" width="478" height="268" fill="url(#d)"/><g class="d1" style="animation-delay:-0.0s"><circle cx="60" cy="250" r="110" fill="#A5B4FC" filter="url(#b)"/></g><g class="d2" style="animation-delay:-2.3s"><circle cx="410" cy="60" r="120" fill="#A5B4FC" filter="url(#b)"/></g><g class="d3" style="animation-delay:-4.6s"><circle cx="250.0" cy="280" r="100" fill="#FFFFFF" filter="url(#b)"/></g></g><rect x="6" y="6" width="478" height="268" fill="none" stroke="#000000" stroke-width="4"/><rect x="466" y="74" width="8" height="186" fill="#000000"/><rect x="32" y="252" width="434" height="8" fill="#000000"/><rect x="24" y="66" width="442" height="186" fill="url(#g)" stroke="#000000" stroke-width="4"/><rect x="32" y="74" width="426" height="170" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><clipPath id="shc"><rect x="24" y="66" width="442" height="186"/></clipPath><g clip-path="url(#shc)"><polygon class="shine" style="--w:682px;animation-delay:0.9s" points="-66,66 -6,66 -36,252 -96,252" fill="#fff" fill-opacity=".5"/></g><g transform="rotate(-2 65.5 37.0)"><g class="fx wig" style="animation-delay:-1s"><rect x="29" y="25" width="83" height="34" fill="#000000"/><rect x="24" y="20" width="83" height="34" fill="#000000" stroke="#000000" stroke-width="4"/><text x="65.5" y="37.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">React</text></g></g><text x="46" y="108" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" fill="#000000">College Availability Finder</text><text x="46" y="142" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="16" font-weight="700" fill="#000000">A React app that matches your cut-off</text><text x="46" y="165" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="16" font-weight="700" fill="#000000">score to the colleges you qualify for,</text><text x="46" y="188" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="16" font-weight="700" fill="#000000">or lists every college from A to Z.</text><g transform="rotate(0 377.0 218.0)"><g class="fx pop" style="animation-delay:-0.4s"><rect x="318" y="204" width="126" height="36" fill="#000000"/><rect x="314" y="200" width="126" height="36" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><text x="377.0" y="218.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">View repo</text></g></g><polygon class="fx spinr" points="456.0,8.0 461.6,16.9 471.3,13.0 470.6,23.4 480.7,26.0 474.0,34.0 480.7,42.0 470.6,44.6 471.3,55.0 461.6,51.1 456.0,60.0 450.4,51.1 440.7,55.0 441.4,44.6 431.3,42.0 438.0,34.0 431.3,26.0 441.4,23.4 440.7,13.0 450.4,16.9" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/></g>
+<defs>
+  <pattern id="card-grid" width="15" height="15" patternUnits="userSpaceOnUse">
+    <path d="M 15 0 L 0 0 0 15" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.08"/>
+  </pattern>
+  <linearGradient id="caf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#070C16"/>
+    <stop offset="60%" stop-color="#0B1324"/>
+    <stop offset="100%" stop-color="#080E1C"/>
+  </linearGradient>
+</defs>
+
+<!-- Card Body with Angled Cut Corner -->
+<polygon points="
+  20,10 480,10 495,25 495,270 480,285 20,285 5,270 5,25
+" fill="url(#caf-bg)" stroke="#162A48" stroke-width="2"/>
+<polygon points="
+  20,10 480,10 495,25 495,270 480,285 20,285 5,270 5,25
+" fill="url(#card-grid)"/>
+
+<!-- Corner Reticles -->
+<path d="M 5 45 L 5 25 L 20 10 L 45 10" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+<path d="M 460 10 L 480 10 L 495 25 L 495 45" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+<path d="M 5 250 L 5 270 L 20 285 L 45 285" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+<path d="M 460 285 L 480 285 L 495 270 L 495 250" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+
+<!-- Top Status HUD Bar -->
+<rect x="25" y="24" width="230" height="24" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-width="1" rx="3"/>
+<circle cx="37" cy="36" r="3.5" fill="#00FFCC"/>
+<text x="47" y="40" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#00F0FF" letter-spacing="1">PROJECT // 01 :: DEPLOYED</text>
+
+<!-- Animated Radar in Top-Right -->
+<g class="spin-gear">
+  <circle cx="455" cy="42" r="16" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+  <circle cx="455" cy="42" r="10" fill="none" stroke="#FF0055" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+</g>
+<circle cx="455" cy="42" r="3" fill="#00FFCC"/>
+
+<!-- Project Title -->
+<text x="25" y="85" font-family="'Orbitron', 'Rajdhani', 'Segoe UI', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="1">COLLEGE AVAILABILITY</text>
+<text x="25" y="112" font-family="'Orbitron', 'Rajdhani', 'Segoe UI', sans-serif" font-size="22" font-weight="900" fill="#00F0FF" letter-spacing="1">FINDER [CAF]</text>
+
+<!-- Tech Badges Pill Row -->
+<g transform="translate(25, 126)">
+  <rect x="0" y="0" width="62" height="20" fill="#0D1E36" stroke="#00F0FF" stroke-width="1" rx="2"/>
+  <text x="31" y="14" font-family="'Consolas', 'Courier New', monospace" font-size="9" font-weight="800" fill="#00F0FF" text-anchor="middle">REACT</text>
+
+  <rect x="68" y="0" width="70" height="20" fill="#0D1E36" stroke="#FFE600" stroke-width="1" rx="2"/>
+  <text x="103" y="14" font-family="'Consolas', 'Courier New', monospace" font-size="9" font-weight="800" fill="#FFE600" text-anchor="middle">JS ES6+</text>
+
+  <rect x="144" y="0" width="90" height="20" fill="#0D1E36" stroke="#FF0055" stroke-width="1" rx="2"/>
+  <text x="189" y="14" font-family="'Consolas', 'Courier New', monospace" font-size="9" font-weight="800" fill="#FF0055" text-anchor="middle">JEST TESTED</text>
+</g>
+
+<!-- Description -->
+<text x="25" y="172" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="600" fill="#C9D1D9">
+  &gt; Algorithmic cutoff matching engine pairing candidate
+</text>
+<text x="25" y="192" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="600" fill="#C9D1D9">
+  &gt; metrics with qualifying collegiate institutions.
+</text>
+<text x="25" y="212" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="500" fill="#8B949E">
+  Features fast fuzzy search and complete A-to-Z directories.
+</text>
+
+<!-- Action CTA Button -->
+<g transform="translate(25, 236)">
+  <polygon points="0,0 160,0 172,12 172,34 160,34 0,34" fill="#00F0FF" fill-opacity="0.15" stroke="#00F0FF" stroke-width="1.5"/>
+  <text x="15" y="22" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="900" fill="#00F0FF" letter-spacing="1">EXECUTE REPO &gt;_</text>
+</g>
+
+<text x="475" y="258" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="700" fill="#00FFCC" text-anchor="end">SYS_BUILD: v1.0.4</text>
 </svg>

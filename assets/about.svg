@@ -1,39 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="991" height="340" viewBox="0 0 991 340" role="img">
-<title>About me</title>
+<title>System Specifications - About Aahil</title>
 <style>
-.fx{transform-box:fill-box;transform-origin:center}
-.j{transform-box:fill-box;transform-origin:left bottom}
-.s1,.s2{opacity:0}
-@media (prefers-reduced-motion:no-preference){
-.d1{animation:d1 11s ease-in-out infinite}
-.d2{animation:d2 14s ease-in-out infinite}
-.d3{animation:d3 9s ease-in-out infinite}
-.wig{animation:wig 2.4s ease-in-out infinite}
-.wig2{animation:wig 3.1s ease-in-out infinite reverse}
-.bob{animation:bob 3s ease-in-out infinite}
-.pop{animation:pop 1.6s ease-in-out infinite}
-.spin{animation:spin 9s linear infinite}
-.spinr{animation:spin 13s linear infinite reverse}
-.jelly{animation:jelly 5s ease-in-out infinite}
-.shad{animation:shad 4s ease-in-out infinite}
-.blink{animation:blink 1s steps(1) infinite}
-.shine{animation:shine 5.5s ease-in-out infinite}
-.stat{animation:stat 9s infinite}
-.tape{animation:tape 1.2s linear infinite}
+@keyframes glow-border {
+  0%, 100% { stroke: #00F0FF; filter: drop-shadow(0 0 3px #00F0FF); }
+  50% { stroke: #7928CA; filter: drop-shadow(0 0 8px #7928CA); }
 }
-@keyframes d1{0%,100%{transform:translate(0,0)}33%{transform:translate(46px,-24px)}66%{transform:translate(-34px,22px)}}
-@keyframes d2{0%,100%{transform:translate(0,0)}40%{transform:translate(-50px,18px)}75%{transform:translate(30px,-26px)}}
-@keyframes d3{0%,100%{transform:translate(0,0)}50%{transform:translate(36px,30px)}}
-@keyframes wig{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes jelly{0%,55%,100%{transform:scale(1,1)}62%{transform:scale(1.05,.92)}69%{transform:scale(.97,1.06)}76%{transform:scale(1.02,.98)}83%{transform:scale(1,1)}}
-@keyframes shad{0%,100%{transform:translate(0,0)}33%{transform:translate(5px,3px)}66%{transform:translate(-1px,5px)}}
-@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes shine{0%{transform:translateX(0)}55%,100%{transform:translateX(var(--w))}}
-@keyframes stat{0%{opacity:0}3%{opacity:1}30%{opacity:1}33%{opacity:0}100%{opacity:0}}
-@keyframes tape{to{transform:translateX(39.6px)}}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; filter: drop-shadow(0 0 6px #00FFCC); }
+}
+.hud-border { animation: glow-border 4s infinite; }
+.pulse-dot { animation: pulse-dot 2s infinite; }
 </style>
-<defs><filter id="b" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="36"/></filter><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".66"/><stop offset="1" stop-color="#fff" stop-opacity=".18"/></linearGradient></defs><g class="d1" style="animation-delay:-0.0s"><circle cx="133" cy="110" r="110" fill="#A5B4FC" filter="url(#b)"/></g><g class="d2" style="animation-delay:-2.3s"><circle cx="874" cy="270" r="120" fill="#2F5BFF" filter="url(#b)"/></g><g class="d3" style="animation-delay:-4.6s"><circle cx="520" cy="170" r="100" fill="#E5E7EB" filter="url(#b)"/></g><g class="d1" style="animation-delay:-6.9s"><circle cx="332" cy="300" r="90" fill="#DBE4FF" filter="url(#b)"/></g><g class="d2" style="animation-delay:-9.2s"><circle cx="951" cy="70" r="80" fill="#A5B4FC" filter="url(#b)"/></g><rect x="965" y="26" width="12" height="300" fill="#000000"/><rect x="26" y="314" width="939" height="12" fill="#000000"/><rect x="14" y="14" width="951" height="300" fill="url(#g)" stroke="#000000" stroke-width="4"/><rect x="22" y="22" width="935" height="284" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><clipPath id="shk"><rect x="14" y="14" width="951" height="300"/></clipPath><g clip-path="url(#shk)"><polygon class="shine" style="--w:1191px;animation-delay:2s" points="-76,14 -16,14 -46,314 -106,314" fill="#fff" fill-opacity=".5"/></g><g transform="rotate(0 129.0 68.0)"><g class="fx wig" style="animation-delay:-0.0s"><rect x="49" y="49" width="170" height="48" fill="#000000"/><rect x="44" y="44" width="170" height="48" fill="#000000" stroke="#000000" stroke-width="4"/><text x="129.0" y="68.0" dy=".35em" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Now</text></g></g><g transform="rotate(0 557.0 68.0)"><g class="fx bob" style="animation-delay:-0.0s"><rect x="249" y="49" width="626" height="48" fill="#000000"/><rect x="244" y="44" width="626" height="48" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="557.0" y="68.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="#000000">Learning fundamentals by building real projects</text></g></g><g transform="rotate(0 129.0 136.0)"><g class="fx wig2" style="animation-delay:-0.6s"><rect x="49" y="117" width="170" height="48" fill="#000000"/><rect x="44" y="112" width="170" height="48" fill="#000000" stroke="#000000" stroke-width="4"/><text x="129.0" y="136.0" dy=".35em" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Likes</text></g></g><g transform="rotate(0 538.0 136.0)"><g class="fx bob" style="animation-delay:-0.3s"><rect x="249" y="117" width="588" height="48" fill="#000000"/><rect x="244" y="112" width="588" height="48" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="538.0" y="136.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="#000000">Solving problems and turning ideas into code</text></g></g><g transform="rotate(0 129.0 204.0)"><g class="fx wig" style="animation-delay:-1.2s"><rect x="49" y="185" width="170" height="48" fill="#000000"/><rect x="44" y="180" width="170" height="48" fill="#000000" stroke="#000000" stroke-width="4"/><text x="129.0" y="204.0" dy=".35em" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Goal</text></g></g><g transform="rotate(0 550.5 204.0)"><g class="fx bob" style="animation-delay:-0.6s"><rect x="249" y="185" width="613" height="48" fill="#000000"/><rect x="244" y="180" width="613" height="48" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="550.5" y="204.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="#000000">Become a skilled developer, project by project</text></g></g><g transform="rotate(-1 338.0 272.0)"><g class="fx wig2" style="animation-delay:-0.4s"><rect x="49" y="253" width="588" height="48" fill="#000000"/><rect x="44" y="248" width="588" height="48" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><text x="338.0" y="272.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">“Small steps every day lead to big results.”</text></g></g><polygon class="fx spin" points="947.0,16.0 951.9,24.8 961.1,20.6 959.9,30.6 969.8,32.6 963.0,40.0 969.8,47.4 959.9,49.4 961.1,59.4 951.9,55.2 947.0,64.0 942.1,55.2 932.9,59.4 934.1,49.4 924.2,47.4 931.0,40.0 924.2,32.6 934.1,30.6 932.9,20.6 942.1,24.8" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+<defs>
+  <pattern id="grid-about" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.08"/>
+  </pattern>
+  <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0B1322"/>
+    <stop offset="100%" stop-color="#080C14"/>
+  </linearGradient>
+</defs>
+
+<rect width="991" height="340" fill="#050810"/>
+<rect x="10" y="10" width="971" height="320" fill="url(#card-grad)" stroke="#16233B" stroke-width="2" rx="6"/>
+<rect x="10" y="10" width="971" height="320" fill="url(#grid-about)" rx="6"/>
+
+<!-- Corner Accents -->
+<path d="M 10 35 L 10 10 L 35 10" fill="none" stroke="#00F0FF" stroke-width="3"/>
+<path d="M 981 35 L 981 10 L 956 10" fill="none" stroke="#00F0FF" stroke-width="3"/>
+<path d="M 10 305 L 10 330 L 35 330" fill="none" stroke="#FF0055" stroke-width="3"/>
+<path d="M 981 305 L 981 330 L 956 330" fill="none" stroke="#00F0FF" stroke-width="3"/>
+
+<!-- Top Spec Banner -->
+<rect x="30" y="24" width="931" height="30" fill="#00F0FF" fill-opacity="0.08" stroke="#00F0FF" stroke-width="1"/>
+<text x="45" y="44" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="900" fill="#00F0FF" letter-spacing="1.5">// SYSTEM_SPECIFICATION :: AGENT_PROFILE :: AAHIL-J</text>
+<text x="945" y="44" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#00FFCC" text-anchor="end" class="pulse-dot">● SUBSYSTEMS: 100% OPERATIONAL</text>
+
+<!-- Row 1: CORE_MISSION & COGNITIVE_DRIVE -->
+<g transform="translate(30, 68)">
+  <!-- Card 1 -->
+  <rect x="0" y="0" width="455" height="110" fill="#0E1726" stroke="#1F3354" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="160" height="26" fill="#00F0FF" fill-opacity="0.18" rx="4 0 4 0"/>
+  <text x="12" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#00F0FF" letter-spacing="1">[ 01 // CORE_MISSION ]</text>
+  <text x="440" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="700" fill="#00FFCC" text-anchor="end">● ACTIVE</text>
+  <text x="16" y="55" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Engineering Web Architectures</text>
+  <text x="16" y="80" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+    Developing responsive front-end web apps with React,
+  </text>
+  <text x="16" y="98" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+    prioritizing clean state logic, speed &amp; intuitive UX.
+  </text>
+
+  <!-- Card 2 -->
+  <g transform="translate(475, 0)">
+    <rect x="0" y="0" width="455" height="110" fill="#0E1726" stroke="#1F3354" stroke-width="1.5" rx="4"/>
+    <rect x="0" y="0" width="180" height="26" fill="#7928CA" fill-opacity="0.3" rx="4 0 4 0"/>
+    <text x="12" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#A5B4FC" letter-spacing="1">[ 02 // PROBLEM_SOLVER ]</text>
+    <text x="440" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="700" fill="#A5B4FC" text-anchor="end">● CONTINUOUS</text>
+    <text x="16" y="55" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Translating Logic into Code</text>
+    <text x="16" y="80" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+      Passionate about algorithmic problem solving,
+    </text>
+    <text x="16" y="98" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+      turning complex requirements into elegant components.
+    </text>
+  </g>
+</g>
+
+<!-- Row 2: EXPEDITION_GOAL & PHILOSOPHY -->
+<g transform="translate(30, 192)">
+  <!-- Card 3 -->
+  <rect x="0" y="0" width="455" height="118" fill="#0E1726" stroke="#1F3354" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="170" height="26" fill="#FF0055" fill-opacity="0.18" rx="4 0 4 0"/>
+  <text x="12" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#FF0055" letter-spacing="1">[ 03 // MASTER_DIRECTIVE ]</text>
+  <text x="440" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="700" fill="#FF0055" text-anchor="end">● TARGET</text>
+  <text x="16" y="55" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Project-Driven Software Mastery</text>
+  <text x="16" y="80" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+    Mastering modern web ecosystems by shipping production-grade
+  </text>
+  <text x="16" y="98" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="500" fill="#8B949E">
+    projects, adhering to automated testing &amp; best practices.
+  </text>
+
+  <!-- Card 4: Operating Philosophy Quote -->
+  <g transform="translate(475, 0)">
+    <rect x="0" y="0" width="455" height="118" fill="#0E1726" stroke="#00FFCC" stroke-width="1.5" rx="4"/>
+    <rect x="0" y="0" width="190" height="26" fill="#00FFCC" fill-opacity="0.18" rx="4 0 4 0"/>
+    <text x="12" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#00FFCC" letter-spacing="1">[ 04 // OPERATING_MAXIM ]</text>
+    <text x="440" y="18" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="700" fill="#00FFCC" text-anchor="end">● CODED</text>
+    <text x="16" y="58" font-family="'Orbitron', 'Rajdhani', sans-serif" font-size="15" font-weight="800" fill="#00F0FF" letter-spacing="0.5">
+      “Small daily increments compound into
+    </text>
+    <text x="16" y="80" font-family="'Orbitron', 'Rajdhani', sans-serif" font-size="15" font-weight="800" fill="#00F0FF" letter-spacing="0.5">
+      monumental engineering breakthroughs.”
+    </text>
+    <text x="16" y="104" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#58A6FF">
+      // PROTOCOL: NEVER_STOP_BUILDING
+    </text>
+  </g>
+</g>
 </svg>

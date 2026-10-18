@@ -1,40 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img">
-<title>Stay curious. Keep building.</title>
+<title>Stay Curious. Keep Architecting.</title>
 <style>
-.fx{transform-box:fill-box;transform-origin:center}
-.j{transform-box:fill-box;transform-origin:left bottom}
-.s1,.s2{opacity:0}
-@media (prefers-reduced-motion:no-preference){
-.d1{animation:d1 11s ease-in-out infinite}
-.d2{animation:d2 14s ease-in-out infinite}
-.d3{animation:d3 9s ease-in-out infinite}
-.wig{animation:wig 2.4s ease-in-out infinite}
-.wig2{animation:wig 3.1s ease-in-out infinite reverse}
-.bob{animation:bob 3s ease-in-out infinite}
-.pop{animation:pop 1.6s ease-in-out infinite}
-.spin{animation:spin 9s linear infinite}
-.spinr{animation:spin 13s linear infinite reverse}
-.jelly{animation:jelly 5s ease-in-out infinite}
-.shad{animation:shad 4s ease-in-out infinite}
-.blink{animation:blink 1s steps(1) infinite}
-.shine{animation:shine 5.5s ease-in-out infinite}
-.stat{animation:stat 9s infinite}
-.tape{animation:tape 1.2s linear infinite}
+@keyframes glow-footer {
+  0%, 100% { filter: drop-shadow(0 0 4px #00F0FF); }
+  50% { filter: drop-shadow(0 0 12px #FF0055); }
 }
-@keyframes d1{0%,100%{transform:translate(0,0)}33%{transform:translate(46px,-24px)}66%{transform:translate(-34px,22px)}}
-@keyframes d2{0%,100%{transform:translate(0,0)}40%{transform:translate(-50px,18px)}75%{transform:translate(30px,-26px)}}
-@keyframes d3{0%,100%{transform:translate(0,0)}50%{transform:translate(36px,30px)}}
-@keyframes wig{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes jelly{0%,55%,100%{transform:scale(1,1)}62%{transform:scale(1.05,.92)}69%{transform:scale(.97,1.06)}76%{transform:scale(1.02,.98)}83%{transform:scale(1,1)}}
-@keyframes shad{0%,100%{transform:translate(0,0)}33%{transform:translate(5px,3px)}66%{transform:translate(-1px,5px)}}
-@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes shine{0%{transform:translateX(0)}55%,100%{transform:translateX(var(--w))}}
-@keyframes stat{0%{opacity:0}3%{opacity:1}30%{opacity:1}33%{opacity:0}100%{opacity:0}}
-@keyframes tape{to{transform:translateX(39.6px)}}
+@keyframes blink-cursor-f {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.glow-f { animation: glow-footer 4s infinite; }
+.blinker-f { animation: blink-cursor-f 1s infinite; }
 </style>
-<defs><filter id="b" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="36"/></filter><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".66"/><stop offset="1" stop-color="#fff" stop-opacity=".18"/></linearGradient><pattern id="d" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#000" fill-opacity=".16"/></pattern></defs>
-<rect width="1200" height="260" fill="#F3F4F6"/><rect width="1200" height="260" fill="url(#d)"/><g class="d1" style="animation-delay:-0.0s"><circle cx="120" cy="240" r="150" fill="#DBE4FF" filter="url(#b)"/></g><g class="d2" style="animation-delay:-2.3s"><circle cx="1060" cy="40" r="160" fill="#2F5BFF" filter="url(#b)"/></g><g class="d3" style="animation-delay:-4.6s"><circle cx="640" cy="260" r="130" fill="#A5B4FC" filter="url(#b)"/></g><rect x="1130" y="48" width="12" height="170" fill="#000000"/><rect x="82" y="206" width="1048" height="12" fill="#000000"/><rect x="70" y="36" width="1060" height="170" fill="url(#g)" stroke="#000000" stroke-width="4"/><rect x="78" y="44" width="1044" height="154" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><clipPath id="shf"><rect x="70" y="36" width="1060" height="170"/></clipPath><g clip-path="url(#shf)"><polygon class="shine" style="--w:1300px;animation-delay:1s" points="-20,36 40,36 10,206 -50,206" fill="#fff" fill-opacity=".5"/></g><g class="j jelly"><text x="112" y="130" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="900" letter-spacing="-1" fill="#000000">Stay curious. Keep building.</text></g><text x="112" y="176" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#000000" textLength="177" lengthAdjust="spacingAndGlyphs">&gt; system.exit(0)</text><rect class="blink" x="298" y="156" width="13" height="26" fill="#000000"/><g transform="rotate(-4 965.0 145.0)"><g class="fx wig2" style="animation-delay:0s"><rect x="856" y="124" width="230" height="54" fill="#000000"/><rect x="850" y="118" width="230" height="54" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><text x="965.0" y="145.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">goodbye, world_</text></g></g><rect x="4" y="4" width="1192" height="252" fill="none" stroke="#000000" stroke-width="8"/><polygon class="fx spin" points="1118.0,4.0 1125.2,17.0 1138.0,9.4 1137.8,24.2 1152.6,24.0 1145.0,36.8 1158.0,44.0 1145.0,51.2 1152.6,64.0 1137.8,63.8 1138.0,78.6 1125.2,71.0 1118.0,84.0 1110.8,71.0 1098.0,78.6 1098.2,63.8 1083.4,64.0 1091.0,51.2 1078.0,44.0 1091.0,36.8 1083.4,24.0 1098.2,24.2 1098.0,9.4 1110.8,17.0" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+<defs>
+  <pattern id="grid-footer" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.08"/>
+  </pattern>
+  <linearGradient id="footer-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#04060A"/>
+    <stop offset="50%" stop-color="#080D1A"/>
+    <stop offset="100%" stop-color="#060912"/>
+  </linearGradient>
+  <linearGradient id="neon-line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00F0FF"/>
+    <stop offset="50%" stop-color="#7928CA"/>
+    <stop offset="100%" stop-color="#FF0055"/>
+  </linearGradient>
+</defs>
+
+<rect width="1200" height="260" fill="url(#footer-bg)"/>
+<rect width="1200" height="260" fill="url(#grid-footer)"/>
+
+<!-- Tech Borders & Cut Corners -->
+<polygon points="
+  30,15 1170,15 1185,30 1185,230 1170,245 30,245 15,230 15,30
+" fill="none" stroke="#16233B" stroke-width="2"/>
+
+<!-- Corner Reticles -->
+<path d="M 15 45 L 15 30 L 30 15 L 50 15" fill="none" stroke="#00F0FF" stroke-width="3"/>
+<path d="M 1150 15 L 1170 15 L 1185 30 L 1185 45" fill="none" stroke="#00F0FF" stroke-width="3"/>
+<path d="M 15 215 L 15 230 L 30 245 L 50 245" fill="none" stroke="#FF0055" stroke-width="3"/>
+<path d="M 1150 245 L 1170 245 L 1185 230 L 1185 215" fill="none" stroke="#00F0FF" stroke-width="3"/>
+
+<!-- Top Telemetry Line -->
+<line x1="30" y1="35" x2="1170" y2="35" stroke="url(#neon-line)" stroke-width="1.5" opacity="0.6"/>
+
+<!-- Main Headline -->
+<text x="60" y="115" font-family="'Orbitron', 'Rajdhani', 'Segoe UI', sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="2">
+  STAY CURIOUS. KEEP ARCHITECTING.
+</text>
+<text x="60" y="115" font-family="'Orbitron', 'Rajdhani', 'Segoe UI', sans-serif" font-size="44" font-weight="900" fill="#00F0FF" letter-spacing="2" opacity="0.2" class="glow-f">
+  STAY CURIOUS. KEEP ARCHITECTING.
+</text>
+
+<!-- Subtitle / Terminal Command -->
+<text x="60" y="165" font-family="'Consolas', 'Courier New', monospace" font-size="20" font-weight="700" fill="#00FFCC" letter-spacing="1">
+  &gt; terminal.session.suspend() // SYSTEM_STANDBY : CONTINUOUS_EXPEDITION
+</text>
+<rect x="790" y="146" width="10" height="22" fill="#FF0055" class="blinker-f"/>
+
+<text x="60" y="205" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="600" fill="#8B949E" letter-spacing="1">
+  CODE_BASE // REACT_18 // ALGORITHMIC_SYSTEMS // AAHIL-J CORP. ALL TRANSMISSIONS LOGGED.
+</text>
+
+<!-- Right Side Cyber Badge -->
+<g transform="translate(930, 80)">
+  <polygon points="0,0 200,0 215,15 215,75 200,90 0,90" fill="#0E1728" stroke="#00F0FF" stroke-width="2"/>
+  <rect x="0" y="0" width="200" height="24" fill="#00F0FF" fill-opacity="0.15"/>
+  <text x="12" y="17" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="900" fill="#00F0FF">[ TERMINAL STATUS ]</text>
+  
+  <circle cx="20" cy="50" r="5" fill="#00FFCC"/>
+  <text x="34" y="55" font-family="'Consolas', 'Courier New', monospace" font-size="14" font-weight="800" fill="#FFFFFF">ACTIVE 24/7</text>
+  <text x="15" y="77" font-family="'Consolas', 'Courier New', monospace" font-size="10" font-weight="600" fill="#58A6FF">NODE: GITHUB/AAHIL-J</text>
+</g>
 </svg>

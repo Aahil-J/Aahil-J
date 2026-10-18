@@ -1,39 +1,129 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="991" height="480" viewBox="0 0 991 480" role="img">
-<title>Learning journey</title>
+<title>Learning Expedition - Mission Roadmap</title>
 <style>
-.fx{transform-box:fill-box;transform-origin:center}
-.j{transform-box:fill-box;transform-origin:left bottom}
-.s1,.s2{opacity:0}
-@media (prefers-reduced-motion:no-preference){
-.d1{animation:d1 11s ease-in-out infinite}
-.d2{animation:d2 14s ease-in-out infinite}
-.d3{animation:d3 9s ease-in-out infinite}
-.wig{animation:wig 2.4s ease-in-out infinite}
-.wig2{animation:wig 3.1s ease-in-out infinite reverse}
-.bob{animation:bob 3s ease-in-out infinite}
-.pop{animation:pop 1.6s ease-in-out infinite}
-.spin{animation:spin 9s linear infinite}
-.spinr{animation:spin 13s linear infinite reverse}
-.jelly{animation:jelly 5s ease-in-out infinite}
-.shad{animation:shad 4s ease-in-out infinite}
-.blink{animation:blink 1s steps(1) infinite}
-.shine{animation:shine 5.5s ease-in-out infinite}
-.stat{animation:stat 9s infinite}
-.tape{animation:tape 1.2s linear infinite}
+@keyframes pulse-cyan {
+  0%, 100% { filter: drop-shadow(0 0 2px #00FFCC); }
+  50% { filter: drop-shadow(0 0 6px #00FFCC); }
 }
-@keyframes d1{0%,100%{transform:translate(0,0)}33%{transform:translate(46px,-24px)}66%{transform:translate(-34px,22px)}}
-@keyframes d2{0%,100%{transform:translate(0,0)}40%{transform:translate(-50px,18px)}75%{transform:translate(30px,-26px)}}
-@keyframes d3{0%,100%{transform:translate(0,0)}50%{transform:translate(36px,30px)}}
-@keyframes wig{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes jelly{0%,55%,100%{transform:scale(1,1)}62%{transform:scale(1.05,.92)}69%{transform:scale(.97,1.06)}76%{transform:scale(1.02,.98)}83%{transform:scale(1,1)}}
-@keyframes shad{0%,100%{transform:translate(0,0)}33%{transform:translate(5px,3px)}66%{transform:translate(-1px,5px)}}
-@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes shine{0%{transform:translateX(0)}55%,100%{transform:translateX(var(--w))}}
-@keyframes stat{0%{opacity:0}3%{opacity:1}30%{opacity:1}33%{opacity:0}100%{opacity:0}}
-@keyframes tape{to{transform:translateX(39.6px)}}
+@keyframes pulse-yellow {
+  0%, 100% { filter: drop-shadow(0 0 2px #FFE600); }
+  50% { filter: drop-shadow(0 0 6px #FFE600); }
+}
+.active-pulse { animation: pulse-yellow 2s infinite; }
+.comp-pulse { animation: pulse-cyan 3s infinite; }
 </style>
-<defs><filter id="b" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="36"/></filter><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".66"/><stop offset="1" stop-color="#fff" stop-opacity=".18"/></linearGradient></defs><g class="d1" style="animation-delay:-0.0s"><circle cx="133" cy="161" r="110" fill="#A5B4FC" filter="url(#b)"/></g><g class="d2" style="animation-delay:-2.3s"><circle cx="874" cy="396" r="120" fill="#2F5BFF" filter="url(#b)"/></g><g class="d3" style="animation-delay:-4.6s"><circle cx="520" cy="249" r="100" fill="#E5E7EB" filter="url(#b)"/></g><g class="d1" style="animation-delay:-6.9s"><circle cx="332" cy="440" r="90" fill="#DBE4FF" filter="url(#b)"/></g><g class="d2" style="animation-delay:-9.2s"><circle cx="951" cy="103" r="80" fill="#A5B4FC" filter="url(#b)"/></g><rect x="965" y="26" width="12" height="440" fill="#000000"/><rect x="26" y="454" width="939" height="12" fill="#000000"/><rect x="14" y="14" width="951" height="440" fill="url(#g)" stroke="#000000" stroke-width="4"/><rect x="22" y="22" width="935" height="424" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><clipPath id="shk"><rect x="14" y="14" width="951" height="440"/></clipPath><g clip-path="url(#shk)"><polygon class="shine" style="--w:1191px;animation-delay:2s" points="-76,14 -16,14 -46,454 -106,454" fill="#fff" fill-opacity=".5"/></g><g class="fx bob" style="animation-delay:-0.0s"><rect x="49" y="49" width="44" height="44" fill="#000000"/><rect x="44" y="44" width="44" height="44" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><polyline points="55,67 63,75 77,57" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/></g><g transform="rotate(0 314.0 66.0)"><g class="fx bob" style="animation-delay:-0.0s"><rect x="109" y="49" width="420" height="44" fill="#000000"/><rect x="104" y="44" width="420" height="44" fill="#DBE4FF" stroke="#000000" stroke-width="4"/><text x="314.0" y="66.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Published a project on GitHub: CAF</text></g></g><g class="fx bob" style="animation-delay:-0.25s"><rect x="49" y="105" width="44" height="44" fill="#000000"/><rect x="44" y="100" width="44" height="44" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><polyline points="55,123 63,131 77,113" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/></g><g transform="rotate(0 354.0 122.0)"><g class="fx bob" style="animation-delay:-0.25s"><rect x="109" y="105" width="500" height="44" fill="#000000"/><rect x="104" y="100" width="500" height="44" fill="#DBE4FF" stroke="#000000" stroke-width="4"/><text x="354.0" y="122.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Wrote tests with Jest and Testing Library</text></g></g><g class="fx bob" style="animation-delay:-0.5s"><rect x="49" y="161" width="44" height="44" fill="#000000"/><rect x="44" y="156" width="44" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/></g><g transform="rotate(0 337.0 178.0)"><g class="fx bob" style="animation-delay:-0.5s"><rect x="109" y="161" width="466" height="44" fill="#000000"/><rect x="104" y="156" width="466" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="337.0" y="178.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Strengthen my programming fundamentals</text></g></g><g class="fx bob" style="animation-delay:-0.75s"><rect x="49" y="217" width="44" height="44" fill="#000000"/><rect x="44" y="212" width="44" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/></g><g transform="rotate(0 342.5 234.0)"><g class="fx bob" style="animation-delay:-0.75s"><rect x="109" y="217" width="477" height="44" fill="#000000"/><rect x="104" y="212" width="477" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="342.5" y="234.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Practice data structures and algorithms</text></g></g><g class="fx bob" style="animation-delay:-1.0s"><rect x="49" y="273" width="44" height="44" fill="#000000"/><rect x="44" y="268" width="44" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/></g><g transform="rotate(0 296.5 290.0)"><g class="fx bob" style="animation-delay:-1.0s"><rect x="109" y="273" width="385" height="44" fill="#000000"/><rect x="104" y="268" width="385" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="296.5" y="290.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Build and publish more projects</text></g></g><g class="fx bob" style="animation-delay:-1.25s"><rect x="49" y="329" width="44" height="44" fill="#000000"/><rect x="44" y="324" width="44" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/></g><g transform="rotate(0 348.5 346.0)"><g class="fx bob" style="animation-delay:-1.25s"><rect x="109" y="329" width="489" height="44" fill="#000000"/><rect x="104" y="324" width="489" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="348.5" y="346.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Learn to collaborate with Git and GitHub</text></g></g><g class="fx bob" style="animation-delay:-1.5s"><rect x="49" y="385" width="44" height="44" fill="#000000"/><rect x="44" y="380" width="44" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/></g><g transform="rotate(0 325.5 402.0)"><g class="fx bob" style="animation-delay:-1.5s"><rect x="109" y="385" width="443" height="44" fill="#000000"/><rect x="104" y="380" width="443" height="44" fill="#FFFFFF" stroke="#000000" stroke-width="4"/><text x="325.5" y="402.0" dy=".35em" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="20" font-weight="700" fill="#000000">Contribute to an open-source project</text></g></g><g transform="rotate(4 816.0 238.0)"><g class="fx wig2" style="animation-delay:-0.8s"><rect x="741" y="215" width="160" height="56" fill="#000000"/><rect x="736" y="210" width="160" height="56" fill="#2F5BFF" stroke="#000000" stroke-width="4"/><text x="816.0" y="238.0" dy=".35em" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">2 / 7 done</text></g></g><polygon class="fx spin" points="947.0,16.0 951.9,24.8 961.1,20.6 959.9,30.6 969.8,32.6 963.0,40.0 969.8,47.4 959.9,49.4 961.1,59.4 951.9,55.2 947.0,64.0 942.1,55.2 932.9,59.4 934.1,49.4 924.2,47.4 931.0,40.0 924.2,32.6 934.1,30.6 932.9,20.6 942.1,24.8" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+<defs>
+  <pattern id="journey-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.08"/>
+  </pattern>
+  <linearGradient id="journey-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#080C14"/>
+    <stop offset="50%" stop-color="#0B1322"/>
+    <stop offset="100%" stop-color="#070A12"/>
+  </linearGradient>
+  <linearGradient id="prog-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00FFCC"/>
+    <stop offset="50%" stop-color="#00F0FF"/>
+    <stop offset="100%" stop-color="#7928CA"/>
+  </linearGradient>
+</defs>
+
+<rect width="991" height="480" fill="#050810"/>
+<rect x="10" y="10" width="971" height="460" fill="url(#journey-bg)" stroke="#16233B" stroke-width="2" rx="6"/>
+<rect x="10" y="10" width="971" height="460" fill="url(#journey-grid)" rx="6"/>
+
+<!-- Corner Accents -->
+<path d="M 10 35 L 10 10 L 35 10" fill="none" stroke="#A5B4FC" stroke-width="3"/>
+<path d="M 981 35 L 981 10 L 956 10" fill="none" stroke="#A5B4FC" stroke-width="3"/>
+<path d="M 10 445 L 10 470 L 35 470" fill="none" stroke="#00FFCC" stroke-width="3"/>
+<path d="M 981 445 L 981 470 L 956 470" fill="none" stroke="#00FFCC" stroke-width="3"/>
+
+<!-- Top Status Header -->
+<rect x="30" y="24" width="931" height="30" fill="#A5B4FC" fill-opacity="0.08" stroke="#A5B4FC" stroke-width="1"/>
+<text x="45" y="44" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="900" fill="#A5B4FC" letter-spacing="1.5">// EXPEDITION_TELEMETRY :: PROTOCOL_INITIALIZATION</text>
+<text x="945" y="44" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#00FFCC" text-anchor="end">STATUS: 2 / 7 PROTOCOLS COMPLETED [28.5%]</text>
+
+<!-- Progress Bar -->
+<g transform="translate(30, 64)">
+  <rect x="0" y="0" width="931" height="10" fill="#0D1626" stroke="#1F3354" stroke-width="1" rx="3"/>
+  <rect x="0" y="0" width="265" height="10" fill="url(#prog-bar)" rx="3"/>
+</g>
+
+<!-- Checklist Items Container -->
+<!-- Item 1: COMPLETED -->
+<g transform="translate(30, 92)">
+  <rect x="0" y="0" width="931" height="44" fill="#0A1424" stroke="#00FFCC" stroke-width="1.5" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#00FFCC" fill-opacity="0.2" stroke="#00FFCC" stroke-width="1.5" rx="2"/>
+  <polyline points="15,22 20,28 29,14" fill="none" stroke="#00FFCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="900" fill="#00FFCC">[ PROTOCOL 01 // COMPLETED ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFFFFF">Deployed Flagship Web App on GitHub: CAF (College Availability Finder)</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#00FFCC" text-anchor="end">✔ VERIFIED</text>
+</g>
+
+<!-- Item 2: COMPLETED -->
+<g transform="translate(30, 144)">
+  <rect x="0" y="0" width="931" height="44" fill="#0A1424" stroke="#00FFCC" stroke-width="1.5" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#00FFCC" fill-opacity="0.2" stroke="#00FFCC" stroke-width="1.5" rx="2"/>
+  <polyline points="15,22 20,28 29,14" fill="none" stroke="#00FFCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="900" fill="#00FFCC">[ PROTOCOL 02 // COMPLETED ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFFFFF">Integrated Automated Unit &amp; Integration Testing Suites (Jest &amp; Testing Library)</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#00FFCC" text-anchor="end">✔ VERIFIED</text>
+</g>
+
+<!-- Item 3: IN_PROGRESS -->
+<g transform="translate(30, 196)">
+  <rect x="0" y="0" width="931" height="44" fill="#14170E" stroke="#FFE600" stroke-width="1.5" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#FFE600" fill-opacity="0.2" stroke="#FFE600" stroke-width="1.5" rx="2"/>
+  <circle cx="22" cy="22" r="5" fill="#FFE600" class="active-pulse"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="900" fill="#FFE600">[ PROTOCOL 03 // EXECUTING ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFFFFF">Deepen Core JavaScript: Asynchronous Flows, Closures, DOM Architecture</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#FFE600" text-anchor="end">⚙ ACTIVE</text>
+</g>
+
+<!-- Item 4: IN_PROGRESS -->
+<g transform="translate(30, 248)">
+  <rect x="0" y="0" width="931" height="44" fill="#14170E" stroke="#FFE600" stroke-width="1.5" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#FFE600" fill-opacity="0.2" stroke="#FFE600" stroke-width="1.5" rx="2"/>
+  <circle cx="22" cy="22" r="5" fill="#FFE600" class="active-pulse"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="900" fill="#FFE600">[ PROTOCOL 04 // EXECUTING ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFFFFF">Master Data Structures, Computational Efficiency &amp; Algorithmic Logic</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#FFE600" text-anchor="end">⚙ ACTIVE</text>
+</g>
+
+<!-- Item 5: QUEUED -->
+<g transform="translate(30, 300)">
+  <rect x="0" y="0" width="931" height="44" fill="#0A101C" stroke="#1F3354" stroke-width="1.2" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#1F3354" fill-opacity="0.3" stroke="#58A6FF" stroke-width="1" rx="2"/>
+  <circle cx="22" cy="22" r="4" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="800" fill="#58A6FF">[ PROTOCOL 05 // QUEUED ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="600" fill="#8B949E">Architect &amp; Ship Advanced React Systems with Multi-Tier State Management</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="end">◌ QUEUED</text>
+</g>
+
+<!-- Item 6: QUEUED -->
+<g transform="translate(30, 352)">
+  <rect x="0" y="0" width="931" height="44" fill="#0A101C" stroke="#1F3354" stroke-width="1.2" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#1F3354" fill-opacity="0.3" stroke="#58A6FF" stroke-width="1" rx="2"/>
+  <circle cx="22" cy="22" r="4" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="800" fill="#58A6FF">[ PROTOCOL 06 // QUEUED ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="600" fill="#8B949E">Scale Collaborative Workflows via Git Branching &amp; Open-Source Contribution</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="end">◌ QUEUED</text>
+</g>
+
+<!-- Item 7: QUEUED -->
+<g transform="translate(30, 404)">
+  <rect x="0" y="0" width="931" height="44" fill="#0A101C" stroke="#1F3354" stroke-width="1.2" rx="4"/>
+  <rect x="8" y="8" width="28" height="28" fill="#1F3354" fill-opacity="0.3" stroke="#58A6FF" stroke-width="1" rx="2"/>
+  <circle cx="22" cy="22" r="4" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+  
+  <text x="50" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="800" fill="#58A6FF">[ PROTOCOL 07 // QUEUED ]</text>
+  <text x="320" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="13" font-weight="600" fill="#8B949E">Lead Full-Stack Web Implementations &amp; Scalable Cloud Deployments</text>
+  <text x="915" y="27" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="end">◌ QUEUED</text>
+</g>
 </svg>
